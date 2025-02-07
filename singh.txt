@@ -1,2 +1,4 @@
 new line of text is added
 new line added
+new text added
+new file added
