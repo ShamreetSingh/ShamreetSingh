@@ -1,0 +1,156 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+
+<HEAD>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" Href="css-files/kissan-banner.css">
+    <link rel="stylesheet" Href="css-files/kissan-sign-in.css">
+  <link rel="stylesheet" Href="css-files/kissan-product-layout1.css">
+  <link rel="stylesheet" Href="css-files/kissan-header.css">
+  <link rel="stylesheet" Href="css-files/kissan-general.css">
+  <link rel="stylesheet" Href="css-files/kissan-hamburger.css">
+  <link rel="stylesheet" Href="css-files/kissan-end-page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+</HEAD>
+<BODY>
+   
+
+<div class="header">
+  <div class="left-section">
+
+      <img class="logo" src="images/icons/kissan(shop).png">
+      <img class="text" src="images/icons/kissan_text1-removebg-preview.png"    >
+   
+
+  </div>
+  <div class="middle-section">
+    
+        <input class="search" type="text" name="searchText" placeholder="Search here.." maxlength="18">
+        
+</div>
+
+
+
+
+  <div class="right-section">
+ 
+    <div>
+      <!-- Button to open the popup -->
+      <button class="open-popup-btn" onclick="openPopup()">Sign In</button>
+    
+      <!-- Popup Overlay -->
+      <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+          <!-- Close Button -->
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <h2>Sign In</h2>
+    
+          <!-- Form -->
+          <form id="signInForm" onsubmit="validateForm(event)">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              oninput="validateInput(this)"
+              required
+            />
+            <span id="emailError" class="error-message"></span>
+    
+            <input
+              type="text"
+              id="password"
+              placeholder="Enter your password"
+              oninput="validateInput(this)"
+              required
+            />
+            <span id="passwordError" class="error-message"></span>
+    
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    
+
+  <img class="cart-icon" src="images/icons/cart.png">
+  <div class="off-screen-menu">
+    <ul class="hamburger-items">
+      <li><img class="home-img" src="images/icons/home.png" alt="Home icon">Home</li>
+      <li><img class="setting-img" src="images/icons/setting..png" alt="Settings icon">Settings</li>
+      <li><img class="customer-img" src="images/icons/customer-care.png" alt="Customer Care icon">Customer Care</li>
+      <li><img class="about-us-img" src="images/icons/info.png" alt="About Us icon">About Us</li>
+    </ul>
+  </div>
+  <nav>
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> 
+  </nav>
+
+
+
+  </div>
+
+
+
+</div>
+
+<div class="slider-container">
+  <div class="slides">
+    <div class="slide">
+      <div class="icon">🌿</div>
+      <h2>Sale on Pesticides</h2>
+      <p>Protect your crops! Get up to 30% off on top-quality pesticides.</p>
+    </div>
+    <div class="slide">
+      <div class="icon">🌱</div>
+      <h2>Sale on Vegetable Seeds</h2>
+      <p>Grow fresh produce with discounts on high-yield vegetable seeds.</p>
+    </div>
+    <div class="slide">
+      <div class="icon">🔨</div>
+      <h2>Sale on Farmers Tools</h2>
+      <p>Equip yourself with premium tools at exclusive discounts.</p>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="nav-item" onclick="toggleSlide(0)">Pesticides</div>
+    <div class="nav-item" onclick="toggleSlide(1)">Seeds</div>
+    <div class="nav-item" onclick="toggleSlide(2)">Tools</div>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Welcome to Kissan 🌾</h1>
+  <p>Explore our vibrant deals on farming essentials and make your farming journey productive and sustainable!</p>
+</div>
+
+<div id="content">
+
+</div>
+
+
+<script src="js-files/hamburger-menu.js"></script>
+<script src="js-files/banner-slider.js"></script>
+<script src="js-files/html-file-fetch.js"></script>
+<script src="js-files/sign-in.js"></script>
+
+
+</BODY>
+</html>
